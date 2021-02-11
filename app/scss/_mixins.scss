@@ -1,4 +1,3 @@
-
 @mixin btn_anim($scaleMax:1.05, $scaleMin:0.95) {
 	transform-origin: center center;
 	transition: all ease-out 240ms;
