@@ -42,6 +42,7 @@ function images() {
 
 function scripts() {
     return src([
+        //добавляешь files.js
         'node_modules/jquery/dist/jquery.js',
         'app/js/main.js'        
     ])//находим и берем содержимое
@@ -52,7 +53,11 @@ function scripts() {
 }
 
 function styles() {
-    return src('app/scss/**/*.scss')//находим и берем содержимое
+    return src([
+        //добавляешь files.css
+        'node_modules/normalize.css/normalize.css',
+        'app/scss/**/*.scss'
+    ])//находим и берем содержимое
         .pipe(scss({outputStyle: 'compressed'}))//сжимаем
         .pipe(autoprefixer({
             overrideBrowserslist: ['last 8 versions'],
