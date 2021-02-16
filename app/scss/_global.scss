@@ -1,25 +1,26 @@
 @import '_mixins';
 @import '_vars';
+
 html {
-	box-sizing: border-box;
-	font-size: 16px;
+    box-sizing: border-box;
+    font-size: 16px;
 }
 
 *,
 *::before,
 *::after {
-	box-sizing: inherit;
+    box-sizing: inherit;
 }
 
-*{
-   margin: 0;
-   padding: 0;
+* {
+    margin: 0;
+    padding: 0;
 }
 
 html,
 body {
-	height: 100%;
-	position: relative;
+    height: 100%;
+    position: relative;
 }
 
 body {}
@@ -34,46 +35,44 @@ h3,
 h4,
 h5,
 h6 {
-	margin: 0;
+    margin: 0;
 }
 
 button:focus,
 input:focus {
-	outline: transparent;
+    outline: transparent;
 }
 
 button {
-	@include no-btn;
+    @include no-btn;
 }
 
 .flex {
-	display: flex;
-	align-items: flex-start;
-	justify-content: flex-start;
+    display: flex;
 }
 
-.--just-space {
-	justify-content: space-between;
+.--jcsb {
+    justify-content: space-between;
 }
 
-.--just-center {
-	justify-content: center;
+.--jcc {
+    justify-content: center;
 }
 
-.--just-end {
-	justify-content: flex-end;
+.--jcfe {
+    justify-content: flex-end;
 }
 
-.--align-str {
-	align-items: stretch;
+.--aish {
+    align-items: stretch;
 }
 
-.--align-center {
-	align-items: center;
+.--aic {
+    align-items: center;
 }
 
-.--align-end {
-	align-items: flex-end;
+.--aife {
+    align-items: flex-end;
 }
 
 .wrapper {
@@ -90,10 +89,8 @@ button {
     flex: 0 0 auto;
 }
 
-a{
-	text-decoration: none;
+a {
+    text-decoration: none;
 }
 
-.container{
-	
-}
+.container {}

@@ -1,26 +1,26 @@
 @mixin btn_anim($scaleMax:1.05, $scaleMin:0.95) {
-	transform-origin: center center;
-	transition: all ease-out 240ms;
+    transform-origin: center center;
+    transition: all ease-out 240ms;
 
-	&:hover {
-		transform: scale($scaleMax);
-	}
+    &:hover {
+        transform: scale($scaleMax);
+    }
 
-	&:focus {
-		transform: scale($scaleMax) trahslateY(-5%);
-	}
+    &:focus {
+        transform: scale($scaleMax) trahslateY(-5%);
+    }
 
-	&:active {
-		transform: scale($scaleMin);
-	}
+    &:active {
+        transform: scale($scaleMin);
+    }
 }
 
 @mixin no-btn {
-	padding: 0;
-	margin: 0;
-	border: 0;
-	background-color: transparent;
-	border-radius: 0;
-	cursor: pointer;
-	-webkit-appearance: none;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    background-color: transparent;
+    border-radius: 0;
+    cursor: pointer;
+    -webkit-appearance: none;
 }
